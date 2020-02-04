@@ -753,6 +753,13 @@ $('button').click(function(){
     $('.total').text("Total: "+theTotal);        
 });
 
+$("#multiplechoice").click(function() {
+    var point = $(this).data("custom-value");
+    theTotal = Number(theTotal) + Number(point);
+    $('.total').text("Total: "+theTotal); 
+    // do other stuff.
+});
+
 $('.total').text("Total: "+theTotal); 
 	</script>
 <!-- END: THEME SCRIPTS -->
